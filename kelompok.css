@@ -1,0 +1,365 @@
+
+.wrapper{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+/*Untuk Tab Bar diatas*/
+.logo a{
+    font-size: 25px;
+    font-weight: 800px;
+    float:left;
+    font-family: monospace;
+    color: green;
+    padding: 10px 0px 10px 0px;
+    
+    
+}
+
+.menu{
+    float: right;
+    margin:0;
+    position: sticky;
+    text-decoration: none;
+   
+   
+}
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex; /*Biar menunya seperti kolom kolom*/
+    line-height: 50px; /*lebar atau tingginya*/
+    position:sticky; /*agar waktu scroll tidak hilang*
+    /*agar posisi tetap diatas*/
+    position:-webkit-sticky;
+    z-index: 1;
+    border-bottom: 1px solid green;
+    top: 0;
+    background-color: #fff;
+  
+}
+
+
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color:white;
+}
+
+nav ul li{
+    float: left;
+    
+}
+ul li a{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    margin: auto;
+    font-size: 17px;
+    font-family: Derpartura;
+
+}
+
+img{
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 100px;
+    position: relative;
+    
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+ul li .tbl-login{
+    text-decoration: none;
+    
+}
+ul li .tbl-signup:hover{
+    background: darkgrey;
+    
+}
+
+/*Untuk Home*/
+.kolom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+}
+
+.kolom .judul1{
+    font-family: Derpartura;
+    font-size: 50px;
+    font-weight: 300px;
+    color: green;
+    line-height: 2px;
+    
+}
+.kolom .judul2{
+    font-family: Derpartura;
+    font-size: 70px;
+    font-weight: 300px;
+    color: green;
+    line-height: 2px;
+    
+}
+.deskripsi{
+    font-family: Cambria;
+    padding: auto;
+    
+}
+
+.kolom .tbl-explore {
+    text-decoration: none;
+    padding: 10px;
+    background-color: green;
+    border-radius: 10px;/*warnanya dibuat rounded*/
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    color: #ffff;
+    font-weight: bold; 
+}
+
+.kolom .tbl-explore:hover{
+    background:black;
+    border-color: black;
+    border-width: 100px;
+}
+
+a.tbl-login{
+    background-color: green;
+    border-radius: 10px;/*warnanya dibuat rounded*/
+    margin-top: 20px;
+    padding: 10px 15px 10px 15px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+a.tbl-signup{
+    background-color: #3f72af;
+    border-radius: 10px;/*warnanya dibuat rounded*/
+    margin-top: 20px;
+    padding: 10px 15px 10px 15px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+/*Untuk Galeri*/
+#galeri .h1{
+    text-align: center;
+}
+div.gambar {
+    margin: 9.5px;
+    align-items: center;
+    border: 3px solid #ccc;
+    float: left;
+    width: 270px;
+}
+div.gambar:hover{
+    border: 2px solid rgb(111, 226, 88);
+}
+div.gambar img{
+    width: 100%;
+    height: auto;
+    }
+div.desc{
+    padding: 9px;
+    text-align: center;
+}
+div.gambar{
+    box-shadow: 4px 4px 8px #C0C0C0;
+}
+div.tombol{ 
+    margin: 5% ;
+    padding: 5%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+    background: #ffffff;
+    font-family: Helvetica;
+}
+.tombol a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #0cf01f;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.tombol a:hover{
+    color: #138d27;
+    background: #0cf01f;
+    box-shadow: 0 0 10px #0cf01f, 0 0 40px #0cf01f, 0 0 80px #0cf01f;
+    transition-delay: 1s;
+}
+.tombol a span{
+    position: absolute;
+    display: block;
+}
+.tombol a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#0cf01f);
+}
+.tombol a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+.tombol a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#0cf01f);
+}
+.tombol a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.tombol a span:nth-child(2){
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#0cf01f);
+}
+.tombol a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.tombol a span:nth-child(4){
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#0cf01f);
+}
+.tombol a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+/*Untuk Tour Package*/
+#paket img {
+    width: 280px;
+    height: 200px;
+    border: 4px solid #575D63;
+    padding: 5px;
+    margin: 20px;
+  }
+/*Untuk Experience*/
+.tengah{
+    text-align: center;
+    width: 100%;
+}
+
+.tutor-list{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-tutor{
+    width:20%;
+    margin: 0 auto;
+
+}
+
+.kartu-tutor img{
+    width: 80%;
+    border-radius: 50%;
+}
+.kartu-tutor p{
+    
+    text-align: center;
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    color: green;
+    
+}
+/*Untuk About us*/
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.about-us span{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.social-link-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px;
+}
+.card-img{
+    border-radius: 5px;
+
+}
+.cards .card{
+    width:16rem;
+    margin :20px;
+}
+.card p{
+    font-size:14px;
+}
+.about link{
+    padding-left: 0px;
+}
+.about-link li{
+    display: inline-block;
+}
+.about-link li a i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: black;
+    margin-right: 10px;
+    font-size: 22px;
+    color: black;
+}
+/*Untuk Copyright*/
+#copyright{
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+
+}
+/*Nyoba Buat Web Responsive*/
+@media screen and (max-width: 991.98px ){
+.wrapper{
+    width: 90%;
+}
+
+.logo a{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+}
